@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { CartProvider } from "../context/CartContext";
 import { trackFbPageView } from "../lib/fbPixel";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
     <CartProvider>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </CartProvider>
   );
 }

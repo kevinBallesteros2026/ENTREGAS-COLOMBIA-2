@@ -1,4 +1,4 @@
-# Tu tienda multinicho — guía de puesta en marcha (pago contra entrega)
+# Entregas Colombia — guía de puesta en marcha (pago contra entrega)
 
 Esta es tu tienda: catálogo por categorías, carrito, y un formulario de
 pedido que el cliente llena y que se envía directo a tu WhatsApp para

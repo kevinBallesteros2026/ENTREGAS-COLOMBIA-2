@@ -1,88 +1,118 @@
-// Catálogo de ejemplo. Reemplaza estos productos por los tuyos:
-// cambia name, slug, category, price (en centavos), description e image.
-// "image" usa un generador de imágenes de relleno; sustitúyela por tus
-// fotos reales subiéndolas a /public/productos/ y apuntando a esa ruta.
+// Catálogo real de Entregas Colombia.
+// Las fotos viven en /public/productos/<slug>.jpg — el campo "image" apunta ahí.
+// Precios en pesos colombianos, sin centavos (ej. 165000 = $165.000).
 
 export const categories = [
-  { id: "tecnologia", label: "Tecnología" },
   { id: "hogar", label: "Hogar" },
-  { id: "belleza", label: "Belleza" },
-  { id: "moda", label: "Moda" },
-  { id: "deporte", label: "Deporte" },
+  { id: "herramientas", label: "Herramientas" },
+  { id: "moda-masculina", label: "Moda masculina" },
+  { id: "vehiculos", label: "Vehículos" },
 ];
 
 export const products = [
   {
-    slug: "auriculares-inalambricos-pro",
-    name: "Auriculares inalámbricos Pro",
-    category: "tecnologia",
-    price: 8999,
-    description:
-      "Cancelación de ruido activa, 30 horas de batería y estuche de carga rápida.",
-    image: "https://picsum.photos/seed/auriculares-pro/800/800",
-  },
-  {
-    slug: "lampara-led-escritorio",
-    name: "Lámpara LED de escritorio",
+    slug: "olla-baterias",
+    name: "OLLA BATERIAS",
     category: "hogar",
-    price: 3499,
-    description:
-      "Tres tonos de luz regulables, brazo articulado y puerto USB integrado.",
-    image: "https://picsum.photos/seed/lampara-led/800/800",
+    price: 165000,
+    description: "Gran combo de ollas y batería de cocina en acero, con tapas incluidas.",
+    image: "/productos/olla-baterias.jpg",
   },
   {
-    slug: "serum-vitamina-c",
-    name: "Sérum facial vitamina C",
-    category: "belleza",
-    price: 2299,
-    description:
-      "Fórmula concentrada para luminosidad e hidratación diaria, apta para piel sensible.",
-    image: "https://picsum.photos/seed/serum-vitc/800/800",
+    slug: "radio-x2-boaffe",
+    name: "RADIO X 2 BOAFFE",
+    category: "herramientas",
+    price: 192000,
+    description: "Par de radios de comunicación Baofeng con accesorios y cargadores incluidos.",
+    image: "/productos/radio-x2-boaffe.jpg",
   },
   {
-    slug: "chaqueta-cortavientos",
-    name: "Chaqueta cortavientos unisex",
-    category: "moda",
-    price: 5499,
-    description:
-      "Tejido resistente al agua, plegable y ligera, ideal para cualquier estación.",
-    image: "https://picsum.photos/seed/chaqueta-cv/800/800",
-  },
-  {
-    slug: "botella-termica-1l",
-    name: "Botella térmica 1L",
-    category: "deporte",
-    price: 1899,
-    description:
-      "Mantiene el frío 24h y el calor 12h. Acero inoxidable, libre de BPA.",
-    image: "https://picsum.photos/seed/botella-termica/800/800",
-  },
-  {
-    slug: "cargador-inalambrico-3en1",
-    name: "Cargador inalámbrico 3 en 1",
-    category: "tecnologia",
-    price: 4299,
-    description:
-      "Carga simultánea de teléfono, reloj y auriculares en una sola base.",
-    image: "https://picsum.photos/seed/cargador-3en1/800/800",
-  },
-  {
-    slug: "organizador-modular",
-    name: "Organizador modular apilable",
+    slug: "escurridor-organizador-cocina",
+    name: "Escurridor Y Organizador De Cocina",
     category: "hogar",
-    price: 2699,
-    description:
-      "Set de 4 piezas para clóset o despensa, resistente y fácil de limpiar.",
-    image: "https://picsum.photos/seed/organizador-mod/800/800",
+    price: 229900,
+    description: "Escurridor de 3 niveles con organizador de utensilios, especias y tabla.",
+    image: "/productos/escurridor-organizador-cocina.jpg",
   },
   {
-    slug: "set-bandas-resistencia",
-    name: "Set de bandas de resistencia",
-    category: "deporte",
-    price: 1599,
-    description:
-      "5 niveles de intensidad con guía de ejercicios incluida.",
-    image: "https://picsum.photos/seed/bandas-resist/800/800",
+    slug: "combo-sabana-cortina-estampados",
+    name: "Combo Sabana Cortina Estampados",
+    category: "hogar",
+    price: 179900,
+    description: "Colcha doble faz con fundas incluidas, disponible en varios colores.",
+    image: "/productos/combo-sabana-cortina-estampados.jpg",
+  },
+  {
+    slug: "sierra-circular-makita",
+    name: "SIERRA CIRCULAR MAKITA jpg",
+    category: "herramientas",
+    price: 335900,
+    description: "Sierra circular profesional Makita de 7 pulgadas, incluye disco para madera.",
+    image: "/productos/sierra-circular-makita.jpg",
+  },
+  {
+    slug: "caladora-makita-900w",
+    name: "CALADORA MAKITA 900W 110V",
+    category: "herramientas",
+    price: 303900,
+    description: "Caladora profesional Makita 900W, velocidad variable, 110V.",
+    image: "/productos/caladora-makita-900w.jpg",
+  },
+  {
+    slug: "combo-taladro-pulidora-makita",
+    name: "COMBO TALADRO Y PULIDORA 6V MAKITA",
+    category: "herramientas",
+    price: 328000,
+    description: "Combo de taladro y pulidora/esmeril angular Makita, con accesorios incluidos.",
+    image: "/productos/combo-taladro-pulidora-makita.jpg",
+  },
+  {
+    slug: "cepillo-electrico-madera-makita",
+    name: "CEPILLO ELECTRICO PARA MADERA MAKITA",
+    category: "herramientas",
+    price: 302900,
+    description: "Cepillo eléctrico profesional Makita para madera, 82mm.",
+    image: "/productos/cepillo-electrico-madera-makita.jpg",
+  },
+  {
+    slug: "calzado-mocasin-caballero",
+    name: "CALZADO MOCASIN PARA CABALLERO",
+    category: "moda-masculina",
+    price: 185000,
+    description: "Mocasín en cuero para caballero, cómodo y resistente.",
+    image: "/productos/calzado-mocasin-caballero.jpg",
+  },
+  {
+    slug: "carpa-universal-moto-impermeable",
+    name: "CARPA UNVERSAL PARA MOTO 100 MPERMEABLE",
+    category: "vehiculos",
+    price: 137900,
+    description: "Carpa cobertora universal para moto, impermeable, incluye bolso de guardado.",
+    image: "/productos/carpa-universal-moto-impermeable.jpg",
+  },
+  {
+    slug: "set-velez-x3",
+    name: "SET VELEZ X3",
+    category: "moda-masculina",
+    price: 221000,
+    description: "Set Vélez x3: bolso cruzado, cinturón y billetera en cuero.",
+    image: "/productos/set-velez-x3.jpg",
+  },
+  {
+    slug: "organizador-3-espacios-closet",
+    name: "ORGANZADOR 3 ESPACOS CLOSET",
+    category: "hogar",
+    price: 172900,
+    description: "Closet organizador portátil de 3 espacios, fácil de armar.",
+    image: "/productos/organizador-3-espacios-closet.jpg",
+  },
+  {
+    slug: "organizador-6-puestos-zapatos",
+    name: "ORGANZADOR 6 PSOS ZAPATOS",
+    category: "hogar",
+    price: 169900,
+    description: "Zapatero organizador de varios niveles con tapa protectora.",
+    image: "/productos/organizador-6-puestos-zapatos.jpg",
   },
 ];
 

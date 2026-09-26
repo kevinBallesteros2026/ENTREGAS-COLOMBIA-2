@@ -33,7 +33,7 @@ export default function ProductPage({ product }) {
       content_ids: [product.slug],
       content_name: product.name,
       content_type: "product",
-      value: product.price / 100,
+      value: product.price,
       currency,
     });
   }, [product]);
@@ -44,7 +44,7 @@ export default function ProductPage({ product }) {
       content_ids: [product.slug],
       content_name: product.name,
       content_type: "product",
-      value: product.price / 100,
+      value: product.price,
       currency,
     });
     setAdded(true);
@@ -54,7 +54,7 @@ export default function ProductPage({ product }) {
   return (
     <>
       <Head>
-        <title>{product.name} — Comercio</title>
+        <title>{product.name} — Entregas Colombia</title>
         <meta name="description" content={product.description} />
       </Head>
 
@@ -66,6 +66,7 @@ export default function ProductPage({ product }) {
         <div className="product-detail__image">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={product.image} alt={product.name} />
+          <span className="brand-watermark brand-watermark--large">Entregas Colombia</span>
         </div>
         <div className="product-detail__info">
           <p className="product-detail__category">{product.category}</p>

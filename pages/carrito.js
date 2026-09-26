@@ -58,7 +58,7 @@ export default function Carrito() {
     // después, al entregar). Por eso el evento Purchase se dispara aquí.
     trackFbEvent("Purchase", {
       content_ids: items.map((i) => i.slug),
-      value: total / 100,
+      value: total,
       currency,
       num_items: items.reduce((n, i) => n + i.qty, 0),
     });
@@ -82,7 +82,7 @@ export default function Carrito() {
   return (
     <>
       <Head>
-        <title>Confirmar pedido — Comercio</title>
+        <title>Confirmar pedido — Entregas Colombia</title>
       </Head>
 
       <section className="cart">

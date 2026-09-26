@@ -2,6 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import { products, categories } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import BannerSlider from "../components/BannerSlider";
 
 export default function Home() {
   const [active, setActive] = useState("todos");
@@ -12,22 +13,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Comercio — un mercado, todos los nichos</title>
+        <title>Entregas Colombia — un mercado, todos los nichos</title>
         <meta
           name="description"
-          content="Tecnología, hogar, belleza, moda y deporte en un solo lugar."
+          content="Entregas Colombia: tecnología, hogar, belleza, moda y deporte, con pago contra entrega."
         />
       </Head>
 
+      <BannerSlider />
+
       <section className="hero">
+        <p className="hero__eyebrow">Entregas Colombia</p>
         <h1>
           Un mercado.
           <br />
           Todos los nichos que te interesan.
         </h1>
         <p>
-          Selecciona una categoría o explora todo el catálogo. Pago seguro,
-          envío rastreado.
+          Selecciona una categoría o explora todo el catálogo. Pago contra
+          entrega, pedido confirmado por WhatsApp.
         </p>
       </section>
 

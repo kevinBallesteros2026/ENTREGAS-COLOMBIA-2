@@ -8,7 +8,7 @@ export default function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-header__logo">
-          Comercio<span>.</span>
+          Entregas <span>Colombia</span>
         </Link>
         <Link href="/carrito" className="site-header__cart">
           Carrito

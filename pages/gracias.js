@@ -5,7 +5,7 @@ export default function Gracias() {
   return (
     <>
       <Head>
-        <title>Pedido confirmado — Comercio</title>
+        <title>Pedido confirmado — Entregas Colombia</title>
       </Head>
 
       <section className="confirmation">
