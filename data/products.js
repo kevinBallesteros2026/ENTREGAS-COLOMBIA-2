@@ -1,6 +1,7 @@
 // Catálogo real de Entregas Colombia.
 // Las fotos viven en /public/productos/<slug>.jpg — el campo "image" apunta ahí.
 // Precios en pesos colombianos, sin centavos (ej. 165000 = $165.000).
+// "features" son los puntos que se muestran destacados en la ficha del producto.
 
 export const categories = [
   { id: "hogar", label: "Hogar" },
@@ -15,7 +16,13 @@ export const products = [
     name: "OLLA BATERIAS",
     category: "hogar",
     price: 165000,
-    description: "Gran combo de ollas y batería de cocina en acero, con tapas incluidas.",
+    description: "Batería de cocina completa en aluminio, lista para renovar tu cocina de una vez.",
+    features: [
+      "Set completo con varias ollas, cacerolas y sartén antiadherente",
+      "Tapas de cierre hermético que conservan el calor y los sabores",
+      "Aluminio resistente, ideal para uso diario",
+      "Fácil de limpiar y liviano para manipular",
+    ],
     image: "/productos/olla-baterias.jpg",
   },
   {
@@ -23,7 +30,13 @@ export const products = [
     name: "RADIO X 2 BOAFFE",
     category: "herramientas",
     price: 192000,
-    description: "Par de radios de comunicación Baofeng con accesorios y cargadores incluidos.",
+    description: "Par de radios portátiles UHF para mantenerte comunicado sin depender del celular.",
+    features: [
+      "16 canales UHF (400–470 MHz) para comunicación clara",
+      "Alcance de varios kilómetros en espacio abierto",
+      "Batería recargable con larga duración",
+      "Incluye 2 radios, cargadores y manos libres",
+    ],
     image: "/productos/radio-x2-boaffe.jpg",
   },
   {
@@ -31,7 +44,13 @@ export const products = [
     name: "Escurridor Y Organizador De Cocina",
     category: "hogar",
     price: 229900,
-    description: "Escurridor de 3 niveles con organizador de utensilios, especias y tabla.",
+    description: "Organiza platos, vasos y utensilios en un solo mueble de varios niveles.",
+    features: [
+      "3 niveles: platos, vasos y utensilios ordenados en un solo mueble",
+      "Incluye espacio para tabla de picar y especiero",
+      "Estructura en acero resistente a la humedad",
+      "Ahorra espacio en la cocina mientras seca la loza",
+    ],
     image: "/productos/escurridor-organizador-cocina.jpg",
   },
   {
@@ -39,7 +58,13 @@ export const products = [
     name: "Combo Sabana Cortina Estampados",
     category: "hogar",
     price: 179900,
-    description: "Colcha doble faz con fundas incluidas, disponible en varios colores.",
+    description: "Colcha doble faz que renueva tu habitación al instante, con fundas incluidas.",
+    features: [
+      "Doble faz: dos estilos de color en una sola pieza",
+      "Incluye fundas de cojín a juego",
+      "Tela suave, fácil de lavar y de secado rápido",
+      "Disponible en varios colores",
+    ],
     image: "/productos/combo-sabana-cortina-estampados.jpg",
   },
   {
@@ -47,7 +72,13 @@ export const products = [
     name: "SIERRA CIRCULAR MAKITA jpg",
     category: "herramientas",
     price: 335900,
-    description: "Sierra circular profesional Makita de 7 pulgadas, incluye disco para madera.",
+    description: "Sierra circular profesional Makita, lista para cortes de precisión en madera.",
+    features: [
+      "Incluye disco de 7\" (185mm) de 24 dientes para madera",
+      "Motor potente para cortes rápidos y parejos",
+      "Base ajustable para controlar la profundidad de corte",
+      "Incluye llave de ajuste y tornillería",
+    ],
     image: "/productos/sierra-circular-makita.jpg",
   },
   {
@@ -55,7 +86,13 @@ export const products = [
     name: "CALADORA MAKITA 900W 110V",
     category: "herramientas",
     price: 303900,
-    description: "Caladora profesional Makita 900W, velocidad variable, 110V.",
+    description: "Caladora Makita de 900W con velocidad variable, para cortes curvos y precisos.",
+    features: [
+      "Potencia de 900W para madera, metal y PVC",
+      "Velocidad variable para adaptarse a cada material",
+      "Base metálica ajustable para cortes en ángulo",
+      "Diseño ergonómico para mayor control",
+    ],
     image: "/productos/caladora-makita-900w.jpg",
   },
   {
@@ -63,7 +100,13 @@ export const products = [
     name: "COMBO TALADRO Y PULIDORA 6V MAKITA",
     category: "herramientas",
     price: 328000,
-    description: "Combo de taladro y pulidora/esmeril angular Makita, con accesorios incluidos.",
+    description: "Dos herramientas esenciales en un solo combo: taladro y pulidora angular.",
+    features: [
+      "Incluye taladro percutor y pulidora/esmeril angular",
+      "Mangos auxiliares y llave incluidos",
+      "Ideal para perforar, atornillar, pulir y desbastar",
+      "Motor de alto rendimiento para trabajo continuo",
+    ],
     image: "/productos/combo-taladro-pulidora-makita.jpg",
   },
   {
@@ -71,7 +114,13 @@ export const products = [
     name: "CEPILLO ELECTRICO PARA MADERA MAKITA",
     category: "herramientas",
     price: 302900,
-    description: "Cepillo eléctrico profesional Makita para madera, 82mm.",
+    description: "Cepillo eléctrico Makita KP0800: acabados profesionales en madera, pasada tras pasada.",
+    features: [
+      "Motor de 620W con velocidad de 17.000 RPM",
+      "Ancho de cepillado de 82mm, ideal para puertas y muebles",
+      "Ajuste preciso de profundidad con perilla graduada",
+      "Base de aluminio resistente para mayor durabilidad",
+    ],
     image: "/productos/cepillo-electrico-madera-makita.jpg",
   },
   {
@@ -79,7 +128,13 @@ export const products = [
     name: "CALZADO MOCASIN PARA CABALLERO",
     category: "moda-masculina",
     price: 185000,
-    description: "Mocasín en cuero para caballero, cómodo y resistente.",
+    description: "Mocasín en cuero para caballero, cómodo desde el primer uso.",
+    features: [
+      "Elaborado en cuero, cómodo para uso diario",
+      "Suela de caucho antideslizante y resistente",
+      "Diseño clásico con cordón, combina looks casuales y formales",
+      "Costuras reforzadas para mayor durabilidad",
+    ],
     image: "/productos/calzado-mocasin-caballero.jpg",
   },
   {
@@ -87,7 +142,13 @@ export const products = [
     name: "CARPA UNVERSAL PARA MOTO 100 MPERMEABLE",
     category: "vehiculos",
     price: 137900,
-    description: "Carpa cobertora universal para moto, impermeable, incluye bolso de guardado.",
+    description: "Protege tu moto del sol, el polvo y la lluvia con esta carpa impermeable.",
+    features: [
+      "Material impermeable que protege del sol, polvo y lluvia",
+      "Talla universal, se ajusta a la mayoría de motocicletas",
+      "Incluye bolso para guardarla cuando no la uses",
+      "Fácil de poner y quitar",
+    ],
     image: "/productos/carpa-universal-moto-impermeable.jpg",
   },
   {
@@ -95,7 +156,13 @@ export const products = [
     name: "SET VELEZ X3",
     category: "moda-masculina",
     price: 221000,
-    description: "Set Vélez x3: bolso cruzado, cinturón y billetera en cuero.",
+    description: "Set 3 en 1 Vélez: bolso cruzado, cinturón y billetera en cuero, listo para regalar.",
+    features: [
+      "Set 3 en 1: bolso cruzado, cinturón y billetera",
+      "Elaborado en cuero, marca Vélez",
+      "Bolso con compartimentos y correa ajustable",
+      "Ideal como regalo o para uso diario",
+    ],
     image: "/productos/set-velez-x3.jpg",
   },
   {
@@ -103,7 +170,13 @@ export const products = [
     name: "ORGANZADOR 3 ESPACOS CLOSET",
     category: "hogar",
     price: 172900,
-    description: "Closet organizador portátil de 3 espacios, fácil de armar.",
+    description: "Closet portátil de 3 espacios, ideal para ampliar tu clóset sin obra.",
+    features: [
+      "3 espacios internos con repisas y barra para colgar ropa",
+      "Estructura resistente y tela reforzada",
+      "Fácil de armar, sin herramientas complicadas",
+      "Ideal para habitaciones pequeñas o como clóset adicional",
+    ],
     image: "/productos/organizador-3-espacios-closet.jpg",
   },
   {
@@ -111,7 +184,13 @@ export const products = [
     name: "ORGANZADOR 6 PSOS ZAPATOS",
     category: "hogar",
     price: 169900,
-    description: "Zapatero organizador de varios niveles con tapa protectora.",
+    description: "Zapatero de varios niveles con tapa, para mantener tus zapatos ordenados y protegidos.",
+    features: [
+      "Varios niveles para organizar tus zapatos ordenadamente",
+      "Cubierta protectora contra el polvo",
+      "Estructura liviana y fácil de armar",
+      "Aprovecha espacios verticales pequeños",
+    ],
     image: "/productos/organizador-6-puestos-zapatos.jpg",
   },
 ];

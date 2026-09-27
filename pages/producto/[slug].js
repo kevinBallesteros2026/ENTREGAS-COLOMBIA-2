@@ -51,6 +51,18 @@ export default function ProductPage({ product }) {
     setTimeout(() => setAdded(false), 1800);
   }
 
+  function handleBuyNow() {
+    addItem(product, 1);
+    trackFbEvent("AddToCart", {
+      content_ids: [product.slug],
+      content_name: product.name,
+      content_type: "product",
+      value: product.price,
+      currency,
+    });
+    router.push("/carrito");
+  }
+
   return (
     <>
       <Head>
@@ -73,9 +85,21 @@ export default function ProductPage({ product }) {
           <h1>{product.name}</h1>
           <p className="product-detail__price">{formatPrice(product.price)}</p>
           <p className="product-detail__description">{product.description}</p>
-          <button className="btn btn--primary" onClick={handleAdd}>
-            {added ? "Añadido ✓" : "Añadir al carrito"}
-          </button>
+          {product.features?.length > 0 && (
+            <ul className="product-detail__features">
+              {product.features.map((f, i) => (
+                <li key={i}>{f}</li>
+              ))}
+            </ul>
+          )}
+          <div className="product-detail__actions">
+            <button className="btn btn--primary" onClick={handleBuyNow}>
+              Comprar ahora
+            </button>
+            <button className="btn btn--secondary" onClick={handleAdd}>
+              {added ? "Añadido ✓" : "Añadir al carrito"}
+            </button>
+          </div>
         </div>
       </section>
     </>
